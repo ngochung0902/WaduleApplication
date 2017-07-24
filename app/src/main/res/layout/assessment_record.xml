@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background">
+    <ImageView
+        android:id="@+id/iconLogoTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_logo_small"
+        android:layout_alignParentTop="true"
+        android:layout_margin="@dimen/margin15"
+        />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_group_bottom"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/iconLogoTop"
+        android:background="@drawable/boder_bg_content">
+        <TextView
+            android:text="ASSESSMENT RECORD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/font14"
+            android:drawableLeft="@drawable/ic_newuser"
+            android:padding="@dimen/margin10"
+            android:gravity="center_vertical"
+            android:drawablePadding="@dimen/margin5"
+            android:layout_marginLeft="@dimen/margin5"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/lbLicense" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/border_rect_layout_white">
+                <LinearLayout
+                    android:id="@+id/ll_tabbar_top"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border_rect_greentop">
+                    <TextView
+                        android:text="TODAY"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tabToday"
+                        android:gravity="center"
+                        android:textColor="@color/dark_green"
+                        android:textSize="@dimen/font18"
+                        android:padding="@dimen/margin10"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_rect_white_tab"
+                        android:layout_marginTop="@dimen/margin10"
+                        android:layout_marginRight="@dimen/margin5"
+                        android:layout_marginLeft="@dimen/margin10"/>
+
+                    <TextView
+                        android:text="HISTORY"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tabHistory"
+                        android:gravity="center"
+                        android:textColor="@color/dark_green"
+                        android:textSize="@dimen/font18"
+                        android:padding="@dimen/margin10"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_rect_green_tab"
+                        android:layout_marginTop="@dimen/margin10"
+                        android:layout_marginRight="@dimen/margin10"
+                        android:layout_marginLeft="@dimen/margin5"/>
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:text="EXAM ID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/font16"
+                    android:padding="@dimen/margin5"
+                    android:gravity="center_vertical"
+                    android:layout_below="@+id/ll_tabbar_top"
+                    android:layout_marginTop="@dimen/margin5"
+                    android:layout_marginRight="@dimen/margin10"
+                    android:layout_marginLeft="@dimen/margin10"
+                    android:id="@+id/lbExam"
+                    />
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/ivNext"
+                    android:src="@drawable/btn_next"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/margin20"
+                    android:layout_marginBottom="@dimen/margin10"
+                    android:layout_marginTop="@dimen/margin5"/>
+
+                <ListView
+                    android:id="@+id/list_history"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@android:color/transparent"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/lbExam"
+                    android:layout_above="@+id/ivNext"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_group_bottom"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+           >
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/ivBack"
+                android:src="@drawable/btn_back"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/margin10"
+                android:layout_marginLeft="@dimen/margin20"
+                android:layout_marginBottom="@dimen/margin5"
+                android:layout_marginTop="@dimen/margin5"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:gravity="right">
+
+            <TextView
+                android:text="REFRESH"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnRefresh"
+                android:textSize="@dimen/font16"
+                android:textColor="@color/color_white"
+                android:layout_gravity="center|right"
+                android:paddingLeft="@dimen/margin10"
+                android:paddingRight="@dimen/margin10"
+                android:layout_marginRight="@dimen/margin20"
+                android:layout_marginTop="@dimen/margin10"
+                android:layout_marginBottom="@dimen/margin10"
+                android:background="@drawable/border_rect_green_dark"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

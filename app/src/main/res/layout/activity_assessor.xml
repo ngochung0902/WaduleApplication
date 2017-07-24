@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background">
+
+    <ImageView
+        android:id="@+id/iconLogoTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/margin15"
+        android:src="@drawable/ic_logo_small" />
+
+    <LinearLayout
+        android:id="@+id/ll_group_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/border_layout_bottom_his"
+            android:stretchMode="columnWidth"
+            android:paddingLeft="@dimen/margin10"
+            android:paddingTop="@dimen/margin5"
+            android:paddingRight="@dimen/margin5">
+
+            <ImageView
+                android:id="@+id/iconBag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_assessmenthistory"
+                android:layout_margin="@dimen/margin5"/>
+
+            <TextView
+                android:id="@+id/lbAssessmentRecord"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:padding="@dimen/margin5"
+                android:text="ASSESSMENT HISTORY"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/font14" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/border_layout_bottom_cal3"
+            android:stretchMode="columnWidth"
+            android:paddingLeft="@dimen/margin10"
+            android:paddingTop="@dimen/margin5"
+            android:paddingRight="@dimen/margin5">
+
+            <ImageView
+                android:id="@+id/iconAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_accounting"
+                android:layout_margin="@dimen/margin5"/>
+
+            <TextView
+                android:id="@+id/lbAccounting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:padding="@dimen/margin5"
+                android:text="ACCOUNTING"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/font14" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/border_layout_bottom_cal2"
+            android:stretchMode="columnWidth"
+            android:paddingLeft="@dimen/margin10"
+            android:paddingTop="@dimen/margin5"
+            android:paddingRight="@dimen/margin5">
+
+            <ImageView
+                android:id="@+id/iconCalendar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_calendar_home"
+                android:layout_margin="@dimen/margin5"/>
+
+            <TextView
+                android:id="@+id/lbCalender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:padding="@dimen/margin5"
+                android:text="CALENDAR"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/font14" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/border_rect_layout_bottom"
+            android:stretchMode="columnWidth"
+            android:paddingLeft="@dimen/margin10"
+            android:paddingTop="@dimen/margin5"
+            android:paddingRight="@dimen/margin5"
+            android:layout_marginBottom="@dimen/margin10">
+
+            <ImageView
+                android:id="@+id/iconStart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_startassessment"
+                android:layout_margin="@dimen/margin5"/>
+
+            <TextView
+                android:id="@+id/lbStartAssessment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:padding="@dimen/margin5"
+                android:text="START ASSESSMENT"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/font14" />
+        </TableRow>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll_group_bottom"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/iconLogoTop"
+        android:background="@drawable/border_rect_layout"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/btnEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="@dimen/margin5"
+                android:paddingLeft="@dimen/margin5"
+                android:layout_marginBottom="@dimen/margin5"
+                android:layout_marginRight="@dimen/margin15"
+                android:layout_marginTop="@dimen/margin5"
+                android:src="@drawable/ic_edit" />
+            <TextView
+                android:id="@+id/lbLogout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="@dimen/margin10"
+                android:layout_toLeftOf="@+id/btnEdit"
+                android:gravity="center_vertical"
+                android:padding="@dimen/margin5"
+                android:maxLines="1"
+                android:layout_centerVertical="true"
+                android:text="log out"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/font16" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_group_center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ll_group_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="@dimen/margin5"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/lbName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/margin10"
+                    android:drawablePadding="@dimen/margin5"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/margin5"
+                    android:maxLines="2"
+                    android:text="N/A"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/font18" />
+
+                <RatingBar
+                    android:id="@+id/ratingBar2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/margin20"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/margin20"
+                    android:layout_marginRight="@dimen/margin5"
+                    android:layout_marginTop="@dimen/margin5"
+                    android:focusable="false"
+                    android:numStars="5"
+                    android:progressDrawable="@drawable/custom_ratingbar_selector"
+                    android:rating="4.0"
+                    android:stepSize="0.5" />
+
+                <TextView
+                    android:id="@+id/lbId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/margin10"
+                    android:drawablePadding="@dimen/margin5"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/margin5"
+                    android:singleLine="true"
+                    android:text="Examiner ID:"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/font14" />
+                <TextView
+                    android:id="@+id/tvIdExam"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/margin10"
+                    android:drawablePadding="@dimen/margin5"
+                    android:singleLine="true"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/margin5"
+                    android:text="N/A"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/font18" />
+                <TextView
+                    android:id="@+id/lbSchool"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/margin10"
+                    android:drawablePadding="@dimen/margin5"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/margin5"
+                    android:maxLines="2"
+                    android:text="N/A"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/font14" />
+
+                <TextView
+                    android:id="@+id/lbSex"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/margin10"
+                    android:drawablePadding="@dimen/margin5"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/margin5"
+                    android:singleLine="true"
+                    android:text="Sex: N/A"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/font14" />
+
+                <TextView
+                    android:id="@+id/lbAge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/margin10"
+                    android:drawablePadding="@dimen/margin5"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/margin5"
+                    android:singleLine="true"
+                    android:text="Age: N/A"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/font14" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+                    android:id="@+id/iconAvatar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerInside"
+                    android:layout_marginTop="@dimen/margin15"/>
+
+                <TextView
+                    android:id="@+id/btnAssessor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/iconAvatar"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/margin5"
+                    android:background="@drawable/bg_green_dark"
+                    android:paddingBottom="@dimen/margin5"
+                    android:paddingLeft="@dimen/margin10"
+                    android:paddingRight="@dimen/margin10"
+                    android:paddingTop="@dimen/margin5"
+                    android:text="ASSESSOR"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/font14" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

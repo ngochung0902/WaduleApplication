@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/margin5"
+    android:layout_marginBottom="@dimen/margin5"
+    android:background="@color/color_layout_rect">
+
+    <TextView
+        android:text="DATE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/header_date"
+        android:layout_weight="1"
+        android:paddingLeft="@dimen/margin10"
+        android:paddingRight="@dimen/margin10"
+        android:textSize="@dimen/font16"
+        android:gravity="center"
+        android:textColor="@color/color_white"
+        android:layout_marginLeft="@dimen/margin5"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:text="EXAM-ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/header_examId"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="@dimen/font16"
+        android:textColor="@color/color_white"
+        android:layout_marginLeft="@dimen/margin5"
+        android:layout_toLeftOf="@+id/header_score"
+        android:layout_toRightOf="@+id/header_date"/>
+
+    <TextView
+        android:text="SCORE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/header_score"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingLeft="@dimen/margin10"
+        android:paddingRight="@dimen/margin10"
+        android:textSize="@dimen/font16"
+        android:textColor="@color/color_white"
+        android:layout_marginLeft="@dimen/margin5"
+        android:layout_alignParentRight="true"/>
+</RelativeLayout>

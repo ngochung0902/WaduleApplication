@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "44783226629",
+    "project_id": "hypnoslim-1349"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:44783226629:android:97efc6c3c8e56d51",
+        "android_client_info": {
+          "package_name": "com.wodule"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "44783226629-bce3irhhha328vb5pb3e5l23bvu3182i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.wodule",
+            "certificate_hash": "bf050c65f1a4664e12a62941b64a18bc09a1cc2f"
+          }
+        },
+        {
+          "client_id": "44783226629-tpi4l0rn141ilqam4hsjep1ouhv4qies.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpBFP7fthuhm04AjyAmQCqnUQmPfHVawc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

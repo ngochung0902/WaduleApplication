@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_group_bottom"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/boder_bg_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/lbTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/margin10"
+            android:drawableLeft="@drawable/ic_newuser"
+            android:drawablePadding="@dimen/margin5"
+            android:gravity="center_vertical"
+            android:padding="@dimen/margin10"
+            android:text="NEW USER"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/font14" />
+
+        <com.wodule.custom.CropImageView
+            android:id="@+id/cropImageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            custom:cropMode="ratio_fit_image"
+            custom:backgroundColor="@color/color_black"
+            custom:handleColor="@color/handle"
+            custom:guideColor="@color/guide"
+            custom:overlayColor="@color/overlay"
+            custom:frameColor="@color/frame"
+            custom:handleSize="@dimen/margin5"
+            custom:touchPadding="@dimen/margin5"
+            custom:handleShowMode="show_always"
+            custom:guideShowMode="show_on_touch"
+            custom:minFrameSize="@dimen/margin50"
+            custom:frameStrokeWeight="1dp"
+            custom:guideStrokeWeight="1dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_group_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="left">
+
+            <ImageView
+                android:id="@+id/ivBack"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="@dimen/margin15"
+                android:layout_marginLeft="@dimen/margin20"
+                android:layout_marginTop="@dimen/margin15"
+                android:src="@drawable/btn_back" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right">
+            <TextView
+                android:text="SUBMIT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnSubmit"
+                android:textSize="@dimen/font16"
+                android:textColor="@color/color_white"
+                android:layout_gravity="center"
+                android:paddingLeft="@dimen/margin15"
+                android:paddingRight="@dimen/margin15"
+                android:layout_marginTop="@dimen/margin15"
+                android:layout_marginBottom="@dimen/margin15"
+                android:layout_marginRight="@dimen/margin30"
+                android:background="@drawable/border_rect_green_dark"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

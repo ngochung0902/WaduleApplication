@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/margin5"
+    >
+    <TextView
+        android:text="15.06.10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/row_date"
+        android:paddingLeft="@dimen/margin5"
+        android:paddingRight="@dimen/margin5"
+        android:textSize="@dimen/font14"
+        android:gravity="left|center_vertical"
+        android:textColor="@color/color_black"
+        android:layout_marginLeft="@dimen/margin5"
+        android:layout_alignParentLeft="true"
+        android:visibility="visible"/>
+
+    <TextView
+        android:text="32626-YH-4648"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/row_examId"
+        android:gravity="left"
+        android:paddingLeft="@dimen/margin5"
+        android:paddingRight="@dimen/margin5"
+        android:textSize="@dimen/font14"
+        android:textColor="@color/color_black"
+        android:layout_marginLeft="@dimen/margin5"
+        android:layout_marginRight="@dimen/margin10"
+        android:layout_toRightOf="@+id/row_date"
+        android:layout_toLeftOf="@+id/row_score"
+        android:visibility="visible"/>
+
+    <TextView
+        android:text="34"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/row_score"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="@dimen/margin5"
+        android:paddingRight="@dimen/margin5"
+        android:textSize="@dimen/font14"
+        android:textColor="@color/color_black"
+        android:layout_marginRight="@dimen/margin10"
+        android:layout_toLeftOf="@+id/row_status"
+        android:visibility="visible"/>
+
+    <TextView
+        android:text="Paid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/row_status"
+        android:gravity="center"
+        android:paddingLeft="@dimen/margin10"
+        android:paddingRight="@dimen/margin10"
+        android:textSize="@dimen/font14"
+        android:textColor="@color/color_black"
+        android:layout_marginRight="@dimen/margin10"
+        android:layout_alignParentRight="true"
+        android:visibility="visible"/>
+</RelativeLayout>

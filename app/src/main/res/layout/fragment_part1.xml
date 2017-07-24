@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:id="@+id/ll_group_bottom"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/margin5"
+            android:layout_marginRight="@dimen/margin5"
+           >
+            <ProgressBar
+                android:id="@+id/record_progress_bar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:indeterminate="false"
+                android:max="100"
+                android:progress="0"
+                android:layout_margin="@dimen/margin5"
+                android:layout_gravity="center"
+                android:progressDrawable="@drawable/progress_bar_circular" />
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:background="@color/color_text_green">
+            <ProgressBar
+                android:id="@+id/progressBar1"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:visibility="visible"
+                android:indeterminate="false"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:max="100"
+                android:progressDrawable="@drawable/progress_bar_line"/>
+            <TextView
+                android:text="00:00"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvTime"
+                android:textSize="@dimen/font16"
+                android:layout_centerInParent="true"
+                android:textColor="@color/color_white"
+                android:layout_gravity="center"
+                android:paddingLeft="@dimen/margin10"
+                android:paddingRight="@dimen/margin10"
+                android:layout_marginTop="@dimen/margin5"
+                android:layout_marginBottom="@dimen/margin5"
+                android:visibility="invisible"/>
+            <TextView
+                android:text="RECORD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnRecord"
+                android:textSize="@dimen/font16"
+                android:textColor="@color/color_white"
+                android:layout_centerInParent="true"
+                android:paddingLeft="@dimen/margin10"
+                android:paddingRight="@dimen/margin10"
+                android:layout_marginTop="@dimen/margin10"
+                android:layout_marginBottom="@dimen/margin10"
+                android:background="@drawable/border_rect_green_dark"
+                android:visibility="invisible"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/ivNext"
+                android:src="@drawable/btn_next"
+                android:layout_marginRight="@dimen/margin10"
+                android:layout_marginLeft="@dimen/margin10"
+                android:layout_marginBottom="@dimen/margin15"
+                android:layout_marginTop="@dimen/margin15"
+                android:visibility="invisible"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_group_bottom"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/boder_bg_content">
+        <TextView
+            android:text="PART 1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/font14"
+            android:drawableLeft="@drawable/ic_newuser"
+            android:padding="@dimen/margin10"
+            android:gravity="center_vertical"
+            android:drawablePadding="@dimen/margin5"
+            android:layout_marginLeft="@dimen/margin5"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/lbTitle" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:background="@drawable/border_rect_layout_white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:text="Reading Aloud"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lbHeader"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/font18"
+                    android:background="@drawable/border_rect_white"
+                    android:paddingTop="@dimen/margin10"
+                    android:paddingLeft="@dimen/margin20"
+                    android:paddingRight="@dimen/margin20"
+                    android:paddingBottom="@dimen/margin10"/>
+
+                <TextView
+                    android:text=""
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/font16"
+                    android:padding="@dimen/margin5"
+                    android:gravity="center_vertical"
+                    android:layout_marginRight="@dimen/margin10"
+                    android:layout_marginLeft="@dimen/margin10"
+                    android:id="@+id/tvContent"
+                    />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+</RelativeLayout>

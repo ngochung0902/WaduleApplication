@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background">
+    <ImageView
+        android:id="@+id/iconLogoTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_logo_small"
+        android:layout_alignParentTop="true"
+        android:layout_margin="@dimen/margin15"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_group_bottom"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+            <TextView
+                android:text="DISAGREE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lbDisagree"
+                android:layout_gravity="center"
+                android:textSize="@dimen/font16"
+                android:textColor="@color/color_white"
+                android:background="@drawable/border_rect_green_dark"
+                android:paddingLeft="@dimen/margin10"
+                android:paddingRight="@dimen/margin10"
+                android:layout_marginTop="@dimen/margin15"
+                android:layout_marginBottom="@dimen/margin15"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+            <TextView
+                android:text="AGREE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lbAgree"
+                android:textSize="@dimen/font16"
+                android:textColor="@color/color_white"
+                android:layout_gravity="center"
+                android:paddingLeft="@dimen/margin10"
+                android:paddingRight="@dimen/margin10"
+                android:layout_marginTop="@dimen/margin15"
+                android:layout_marginBottom="@dimen/margin15"
+                android:background="@drawable/border_rect_green_dark"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iconLogoTop"
+        android:layout_above="@+id/ll_group_bottom"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/boder_bg_content">
+        <TextView
+            android:text="LICENSE AGREEMENT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/font14"
+            android:drawableLeft="@drawable/ic_license"
+            android:padding="@dimen/margin5"
+            android:gravity="center_vertical"
+            android:drawablePadding="@dimen/margin5"
+            android:layout_marginLeft="@dimen/margin10"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/lbLicense" />
+        <LinearLayout
+            android:id="@+id/ll_group_center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/boder_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/font16"
+                android:layout_marginTop="@dimen/margin5"
+                android:layout_marginBottom="@dimen/margin5"
+                android:id="@+id/tvContent" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

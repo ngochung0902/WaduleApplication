@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background">
+    <ImageView
+        android:id="@+id/iconLogoTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_logo_small"
+        android:layout_alignParentTop="true"
+        android:layout_margin="@dimen/margin15"
+        />
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iconLogoTop"
+        android:layout_above="@+id/ll_group_bottom"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/boder_bg_content">
+
+        <TextView
+            android:text="CALENDAR OF EXAM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/font14"
+            android:drawableLeft="@drawable/ic_newuser"
+            android:padding="@dimen/margin10"
+            android:gravity="center_vertical"
+            android:drawablePadding="@dimen/margin5"
+            android:layout_marginLeft="@dimen/margin10"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/lbTitle" />
+
+        <LinearLayout
+            android:id="@+id/ll_group_center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/border_rect_layout"
+            >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_bg_content"
+                android:layout_marginTop="@dimen/margin5"
+                android:layout_marginLeft="@dimen/margin20"
+                android:layout_marginRight="@dimen/margin20"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:id="@+id/header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/margin5">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left" >
+
+                        <TextView
+                            android:id="@+id/previous"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="@dimen/margin10"
+                            android:background="@drawable/btn_back_calendar"
+                            android:clickable="true"
+                            android:gravity="center"
+                            />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/lbMonthyear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_horizontal"
+                        android:padding="5dp"
+                        android:text="May 2017"
+                        android:paddingLeft="5dp"
+                        android:textColor="@color/dark_green"
+                        android:textSize="@dimen/font16"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/lbMonthyear"
+                        android:gravity="right" >
+
+                        <TextView
+                            android:id="@+id/next"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginRight="@dimen/margin10"
+                            android:background="@drawable/btn_next_calendar"
+                            android:clickable="true"
+                            android:gravity="center"
+                            />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/dark_green"
+                    />
+
+                <TableRow
+                    android:id="@+id/tableRowDay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="1dp"
+                    android:stretchMode="columnWidth"
+                    android:weightSum="7" >
+
+                    <TextView
+                        android:id="@+id/lbSun"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="SU"
+                        android:textColor="@color/color_text_green"
+                        android:textSize="@dimen/font13" />
+
+                    <TextView
+                        android:id="@+id/lbMon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="MO"
+                        android:textColor="@color/color_text_green"
+                        android:textSize="@dimen/font13" />
+
+                    <TextView
+                        android:id="@+id/lbTue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="TU"
+                        android:textColor="@color/color_text_green"
+                        android:textSize="@dimen/font13" />
+
+                    <TextView
+                        android:id="@+id/lbWed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="WE"
+                        android:textColor="@color/color_text_green"
+                        android:textSize="@dimen/font13" />
+
+                    <TextView
+                        android:id="@+id/lbThu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="TH"
+                        android:textColor="@color/color_text_green"
+                        android:textSize="@dimen/font13" />
+
+                    <TextView
+                        android:id="@+id/lbFri"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="FR"
+                        android:textColor="@color/color_text_green"
+                        android:textSize="@dimen/font13" />
+
+                    <TextView
+                        android:id="@+id/lbSat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="SA"
+                        android:textColor="@color/color_text_green"
+                        android:textSize="@dimen/font13" />
+                </TableRow>
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/dark_green" />
+
+                <GridView
+                    android:id="@+id/gridview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:horizontalSpacing="@dimen/margin2"
+                    android:numColumns="7"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="@dimen/margin2"
+                    android:scrollbars="none"
+                    />
+            </LinearLayout>
+            <TextView
+                android:text="RELATED EVENTS:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/font14"
+                android:padding="@dimen/margin5"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="@dimen/margin10"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/lbEvent"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/margin20">
+
+                <TableRow
+                    android:id="@+id/tbRow1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:stretchMode="columnWidth"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:text="MidTerm Exam"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_white"
+                        android:textSize="@dimen/font14"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical"
+                        android:layout_gravity="center_horizontal"
+                        />
+
+                    <TextView
+                        android:text="01|05|2017"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_white"
+                        android:textSize="@dimen/font14"
+                        android:gravity="center_vertical"
+                        android:layout_gravity="center_horizontal"
+                        />
+                </TableRow>
+                <TableRow
+                    android:id="@+id/tbRow2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:stretchMode="columnWidth"
+                    android:weightSum="2">
+                    <TextView
+                        android:text="Final Exam      "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_white"
+                        android:textSize="@dimen/font14"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical"
+                        android:layout_gravity="center_horizontal"
+                        />
+                    <TextView
+                        android:text="01|05|2017"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_white"
+                        android:textSize="@dimen/font14"
+                        android:gravity="center_vertical"
+                        android:layout_gravity="center_horizontal"
+                        />
+                </TableRow>
+                <TableRow
+                    android:id="@+id/tbRow3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:stretchMode="columnWidth"
+                    android:weightSum="2">
+                    <TextView
+                        android:text="Completation "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_white"
+                        android:textSize="@dimen/font14"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical"
+                        android:layout_gravity="center_horizontal"
+                        />
+                    <TextView
+                        android:text="01|05|2017"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_white"
+                        android:textSize="@dimen/font14"
+                        android:gravity="center_vertical"
+                        android:layout_gravity="center_horizontal"
+                        />
+                </TableRow>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_group_bottom"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/ivBack"
+                android:background="@drawable/btn_back"
+                android:layout_marginLeft="@dimen/margin20"
+                android:layout_marginBottom="@dimen/margin10"
+                android:layout_marginTop="@dimen/margin10"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/ivNext"
+                android:background="@drawable/btn_next"
+                android:layout_marginRight="@dimen/margin20"
+                android:layout_marginBottom="@dimen/margin10"
+                android:layout_marginTop="@dimen/margin10"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

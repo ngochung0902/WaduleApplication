@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="SELECT SCORE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lbTitle"
+        android:textSize="@dimen/font18"
+        android:textColor="@color/dark_green"
+        android:gravity="center"
+        android:padding="@dimen/margin8"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_black"
+        android:id="@+id/textView11" />
+
+    <GridView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/list_font"
+        android:gravity="center"
+        android:numColumns="auto_fit"
+        android:columnWidth="50dp"
+        android:stretchMode="columnWidth"
+        android:layout_gravity="center_horizontal"
+        android:listSelector="@color/color_layout_rect"/>
+</LinearLayout>

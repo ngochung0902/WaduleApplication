@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_top_login"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_group_center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_rect_layout"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:text="Secured connection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/font14"
+            android:drawableLeft="@drawable/ic_lock"
+            android:drawablePadding="@dimen/margin5"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin5"
+            android:layout_marginBottom="@dimen/margin5"
+            android:layout_marginRight="@dimen/margin15"
+            android:id="@+id/textView2" />
+        <TextView
+            android:text="Please sign in:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/font18"
+            android:layout_marginTop="@dimen/margin5"
+            android:layout_marginBottom="@dimen/margin5"
+            android:layout_marginRight="@dimen/margin25"
+            android:id="@+id/lbSignin" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:hint="Username"
+            android:id="@+id/edUserName"
+            android:textSize="@dimen/font16"
+            android:textColor="@color/color_text_green"
+            android:textColorHint="@color/color_hint_text"
+            android:paddingLeft="@dimen/margin15"
+            android:paddingRight="@dimen/margin15"
+            android:paddingTop="@dimen/margin7"
+            android:paddingBottom="@dimen/margin7"
+            android:maxLines="1"
+            android:layout_marginTop="@dimen/margin5"
+            android:layout_marginLeft="@dimen/margin20"
+            android:layout_marginRight="@dimen/margin20"
+            android:background="@drawable/border_rect_button"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:hint="Password"
+            android:id="@+id/edPassword"
+            android:textSize="@dimen/font16"
+            android:textColor="@color/color_text_green"
+            android:textColorHint="@color/color_hint_text"
+            android:paddingLeft="@dimen/margin15"
+            android:paddingRight="@dimen/margin15"
+            android:paddingTop="@dimen/margin7"
+            android:paddingBottom="@dimen/margin7"
+            android:maxLines="1"
+            android:layout_marginLeft="@dimen/margin20"
+            android:layout_marginRight="@dimen/margin20"
+            android:layout_marginTop="@dimen/margin10"
+            android:background="@drawable/border_rect_button"/>
+
+
+
+        <Button
+            android:text="Submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_text_green"
+            android:textSize="@dimen/font16"
+            android:gravity="center"
+            android:paddingLeft="@dimen/margin20"
+            android:paddingRight="@dimen/margin20"
+            android:background="@drawable/border_rect_button"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin10"
+            android:id="@+id/btnSubmit" />
+
+        <TextView
+            android:text=" - - - - - - - - - - - - - - - - - - - - - - - - - - "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/color_white"
+            android:padding="@dimen/margin5"
+            android:layout_marginTop="@dimen/margin5"
+            android:id="@+id/textView3" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/margin5">
+            <ImageView
+                android:id="@+id/iconInstagram"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/btn_ig"
+                android:layout_centerInParent="true"/>
+            <ImageView
+                android:id="@+id/iconFacebook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/btn_fb"
+                android:layout_marginRight="@dimen/margin10"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/iconInstagram"/>
+            <com.google.android.gms.common.SignInButton
+                android:id="@+id/sign_in_button"
+                android:background="@drawable/btn_gplus"
+                android:layout_marginLeft="@dimen/margin10"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/iconInstagram"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+            <ImageView
+                android:id="@+id/iconGPlus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/btn_gplus"
+                android:layout_marginLeft="@dimen/margin10"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/iconInstagram"
+                android:visibility="visible"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_group_center"
+        android:layout_centerHorizontal="true"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/iconLogoTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_logo_small"
+           />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_group_bottom"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_group_center"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        >
+        <TextView
+            android:text="Register / New User"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/font14"
+            android:drawableLeft="@drawable/ic_arrow"
+            android:drawablePadding="@dimen/margin5"
+            android:layout_gravity="left"
+            android:layout_margin="@dimen/margin5"
+            android:id="@+id/tvRegister" />
+        <TextView
+            android:text="Forgot your password?"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/font14"
+            android:drawableLeft="@drawable/ic_arrow"
+            android:drawablePadding="@dimen/margin5"
+            android:layout_gravity="left"
+            android:layout_marginTop="@dimen/margin10"
+            android:layout_marginBottom="@dimen/margin10"
+            android:layout_marginLeft="@dimen/margin5"
+            android:id="@+id/tvForgotPass" />
+        <TextView
+            android:text="License Agreement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/font14"
+            android:drawableLeft="@drawable/ic_arrow"
+            android:drawablePadding="@dimen/margin5"
+            android:layout_gravity="left"
+            android:layout_margin="@dimen/margin5"
+            android:id="@+id/tvLicense" />
+
+    </LinearLayout>
+</RelativeLayout>
